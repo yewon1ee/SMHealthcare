@@ -76,13 +76,19 @@ void printHealthData(const HealthData* health_data) {
 	// ToCode: to print out the saved history of calories including basal metabolic rate, 
 	// total calories burned, total calories intake, and the remaining calories
 	printf("============================== Total Calories =========================\n");
- 
- 
+    printf("Basal Metabolic Rate: 1300 kcal\n"); 
+    printf("Total calories burned: %d kcal\n", total_calories_burned);
+    printf("Total calories intake: %d kcal\n",total_calories_intake);
+    printf("The remaining calories: %d",remain_calories );
     printf("=======================================================================\n \n");
     
+    	remain_calories=total_calories_intake-1300-total_calories_burned //calculate remaining calories
 	
 	// ToCode: to print out the recommendtaion depending on the current total calories burned and intake    
-    
-    
+    if (remain_calories=0)
+    { 
+	  printf("You have consumed all your calories for today!");
+	  
+	}    
 	 printf("=======================================================================\n");
 }

@@ -58,11 +58,10 @@ int main() {
                 break;
                 
             case 4:
-            	
-    			printf("Exit the system.\n");
-    			printf("=======================================================================\n");
-                break;
-                
+                printf("Exit the system.\n");
+                printf("=======================================================================\n");
+                saveData("health_data.txt", &health_data); // save data
+                return 0;
             default:
                 printf("[Error] Invalid option. \n");
                 printf("Please try again! \n");
