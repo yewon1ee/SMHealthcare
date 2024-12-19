@@ -92,7 +92,6 @@ void printHealthData(const HealthData* health_data) {
             health_data->diets[i].calories_intake);
     }
 
-
     printf("=======================================================================\n");
 
 

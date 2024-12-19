@@ -28,9 +28,10 @@ int main() {
       if (exerciseFile == NULL) {
         printf("Error: Could not open %s\n", EXERCISEFILEPATH);
         return 1;
+    }
     // ToCode: to run the "Healthcare Management Systems" until all calories are used up or the user wants to exit the system
     do {
-    	if (health_data.remainingCalories <= 0 ){
+    	if (health_data.remain_calories <= 0 ){
             printf("You have consumed all your calories for today! \n");
 		} 
 		else{
@@ -54,11 +55,13 @@ int main() {
                 
             case 2:
             	// Display the list of diets
-                loadDiets(dietFile);
+                loadDiets(DIETFILEPATH);
+              
                 break;
                 
             case 3:
-            	
+            	// Show logged information and recommendations
+                printHealthData(&health_data);
                 break;
                 
             case 4:
@@ -70,7 +73,7 @@ int main() {
                 printf("[Error] Invalid option. \n");
                 printf("Please try again! \n");
         }
-    } while ( );
+    } while (1);
 
     return 0;
 }

@@ -1,0 +1,14 @@
+[Exercises] 
+running - 11000000 kcal
+Total calories burned: 11000000 kcal 
+
+[Diets] 
+salad - 70 kcal
+chicken - 925 kcal
+chicken - 925 kcal
+chicken - 925 kcal
+Total calories intake: 2845 kcal 
+
+[Total] 
+Basal metabolic rate: 1300 kcal
+The remaining calories: -10998455 kcal
